@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trang web với các cột</title>
+    <style>
+      /* Thiết lập lưới với ba cột */
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+
+      /* Thiết lập kích thước cho hình ảnh */
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Thiết lập kiểu chữ */
+      p {
+        font-size: 1.2em;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="https://placeimg.com/500/500/animals" alt="Hình ảnh động vật">
+        <p>Nội dung cột thứ nhất</p>
+      </div>
+      <div>
+        <img src="https://placeimg.com/500/500/nature" alt="Hình ảnh thiên nhiên">
+        <p>Nội dung cột thứ hai</p>
+      </div>
+      <div>
+        <img src="https://placeimg.com/500/500/tech" alt="Hình ảnh công nghệ">
+        <p>Nội dung cột thứ ba</p>
+      </div>
+    </div>
+  </body>
+</html>
